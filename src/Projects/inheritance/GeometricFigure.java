@@ -7,8 +7,6 @@ public class GeometricFigure {
     boolean filled;
     LocalDateTime dateTime;
 
-
-
     public String getColor() {
         return color;
     }

@@ -1,6 +1,6 @@
 package Projects.inheritance;
 
-public class Triangle {
+public class Triangle extends GeometricFigure{
 
     private double side1 = 1;
     private double side2 = 1;
