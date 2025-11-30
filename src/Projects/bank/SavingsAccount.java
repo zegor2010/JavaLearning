@@ -1,4 +1,6 @@
-package Projects.Bank;
+package Projects.bank;
+
+import java.util.ArrayList;
 
 public class SavingsAccount extends Account {
     private SavingsAccount(int id, double balance, double annualInterestRate, String dateCreated) {
@@ -8,8 +10,12 @@ public class SavingsAccount extends Account {
     @Override
     public void withdraw(double amount) {
         if (balance - amount < 0) {
+            System.out.println("not enough balance");
         } else {
             balance -= amount;
         }
+
+
     }
+
 }

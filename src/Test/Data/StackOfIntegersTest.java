@@ -1,6 +1,6 @@
 package Test.Data;
 
-import Projects.Data.StackOfIntegers;
+import Projects.data.StackOfIntegers;
 
 public class StackOfIntegersTest {
     public static void main(String[] args) {

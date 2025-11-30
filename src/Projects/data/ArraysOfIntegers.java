@@ -1,4 +1,4 @@
-package Projects.Data;
+package Projects.data;
 
 public class ArraysOfIntegers {
     private Integer[] elements;

@@ -1,6 +1,6 @@
 package Test.Data;
 
-import Projects.Data.QueueOfIntegers;
+import Projects.data.QueueOfIntegers;
 
 
 public class QueueOfIntegersTest {

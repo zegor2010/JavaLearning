@@ -1,4 +1,4 @@
-package Projects.Bank;
+package Projects.bank;
 
 public class CheckingAccount extends Account {
     private double overdraftLimit;
@@ -21,6 +21,7 @@ public class CheckingAccount extends Account {
     @Override
     public void withdraw(double amount) {
         if (balance - amount < -overdraftLimit) {
+            System.out.println("too much");
         } else {
             balance -= amount;
         }

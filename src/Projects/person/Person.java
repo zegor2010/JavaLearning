@@ -1,4 +1,4 @@
-package Projects.Person;
+package Projects.person;
 
 public class Person {
 
@@ -37,5 +37,6 @@ public class Person {
         this.address = address;
         this.phone = phone;
         this.email = email;
+
     }
 }

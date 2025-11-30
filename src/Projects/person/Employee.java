@@ -1,10 +1,12 @@
-package Projects.Person;
+package Projects.person;
+
+import java.time.LocalDateTime;
 
 public class Employee extends Person {
 
     private String office;
     private double salary;
-    private String dateHired;
+    private LocalDateTime hireDate;
 
     public String getOffice() {
         return office;
@@ -18,18 +20,16 @@ public class Employee extends Person {
     public void setSalary(double salary) {
         this.salary = salary;
     }
-    public String getDateHired() {
-        return dateHired;
-    }
-    public void setDateHired(String dateHired) {
-        this.dateHired = dateHired;
+    public LocalDateTime getHireDate() {
+        return hireDate;
     }
 
+
     public Employee(String name, String address, int phone, String email,
-                    String office, double salary, String dateHired) {
+                    String office, double salary) {
         super(name, address, phone, email);
         this.office = office;
         this.salary = salary;
-        this.dateHired = dateHired;
+        this.hireDate = LocalDateTime.now();
     }
 }

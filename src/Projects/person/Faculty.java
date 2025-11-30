@@ -1,4 +1,6 @@
-package Projects.Person;
+package Projects.person;
+
+import java.time.LocalDateTime;
 
 public class Faculty extends Employee {
 
@@ -18,8 +20,8 @@ public class Faculty extends Employee {
         this.rank = rank;
     }
 
-    public Faculty(String name, String address, int phone, String email, String office, double salary, String dateHired, int workedHours, String rank) {
-        super(name, address, phone, email, office, salary, dateHired);
+    public Faculty(String name, String address, int phone, String email, String office, double salary, LocalDateTime hireDate, int workedHours, String rank) {
+        super(name, address, phone, email, office, salary, hireDate);
         this.workedHours = workedHours;
         this.rank = rank;
     }

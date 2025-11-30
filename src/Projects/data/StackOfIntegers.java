@@ -1,12 +1,11 @@
-package Projects.Data;
+package Projects.data;
 
-public class QueueOfIntegers {
+public class StackOfIntegers {
     private int[] elements;
-    private int capacity;
     private int top = -1;
-    private int first = 0;
+    private int capacity;
 
-    public QueueOfIntegers(int size) {
+    public StackOfIntegers(int size) {
         capacity = size;
         elements = new int[capacity];
     }
@@ -16,11 +15,11 @@ public class QueueOfIntegers {
         elements[top] = value;
     }
     public void pop() {
-        elements[first] = 0;
+        elements[top] = 0;
         top--;
     }
     public int peek() {
-        return elements[first];
+        return elements[top];
     }
     public boolean isEmpty() {
         if (top == -1) {
@@ -60,9 +59,8 @@ public class QueueOfIntegers {
         return false;
     }
     public void print() {
-        for (int i = 0; i <= top; i++) {
+        for (int i = 0; i < top; i++) {
             System.out.print(elements[i] + " ");
         }
-        System.out.println();
     }
 }

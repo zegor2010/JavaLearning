@@ -1,4 +1,4 @@
-package Projects.Bank;
+package Projects.bank;
 
 public class Account {
     private int Id;
